@@ -30,7 +30,7 @@ ALTER TABLE BlockchainFile ADD CONSTRAINT BlockchainFile_BlockchainFileName UNIQ
 -- Contains information about the Bitcoin blocks.
 -- ==========================================================================
 CREATE TABLE Block (
-    BlockId                         BIGINT PRIMARY KEY              NOT NULL,
+    BlockId                         BIGINT IDENTITY(1,1) PRIMARY KEY   NOT NULL,
     BlockchainFileId                INT                             NOT NULL,
     BlockVersion                    INT                             NOT NULL,
 

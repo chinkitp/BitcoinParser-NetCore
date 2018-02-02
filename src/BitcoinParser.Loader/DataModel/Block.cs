@@ -15,10 +15,10 @@ namespace BitcoinDataLayerAdoNet.Data
     /// </summary>
     public class Block
     {
-        public Block(long blockId, int blockchainFileId, int blockVersion, ByteArray blockHash, ByteArray previousBlockHash, DateTime blockTimestamp)
+        public Block(int blockVersion, byte[] blockHash, byte[] previousBlockHash, DateTime blockTimestamp)
         {
-            this.BlockId = blockId;
-            this.BlockchainFileId = blockchainFileId;
+            //this.BlockId = blockId;
+            this.BlockchainFileId = 0;
             this.BlockVersion = blockVersion;
             this.BlockHash = blockHash;
             this.PreviousBlockHash = previousBlockHash;
@@ -33,8 +33,8 @@ namespace BitcoinDataLayerAdoNet.Data
 
         public DateTime BlockTimestamp { get; private set; }
 
-        public ByteArray BlockHash { get; private set; }
+        public byte[] BlockHash { get; private set; }
 
-        public ByteArray PreviousBlockHash { get; private set; }
+        public byte[] PreviousBlockHash { get; private set; }
     }
 }
