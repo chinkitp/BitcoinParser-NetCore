@@ -309,10 +309,6 @@
     <Content Include="SQLScripts\DataSetViews.sql" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AdoNetHelpers\AdoNetHelpers.csproj">
-      <Project>{917927c4-3159-455f-82e3-18d0578bfa3a}</Project>
-      <Name>AdoNetHelpers</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ZeroHelpers\ZeroHelpers.csproj">
       <Project>{840f367f-12cf-4ec5-9d9d-bcf9ed9bb4b1}</Project>
       <Name>ZeroHelpers</Name>

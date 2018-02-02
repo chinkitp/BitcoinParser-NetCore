@@ -81,10 +81,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\BitcoinDatabaseGenerator\BitcoinDatabaseGenerator.csproj">
-      <Project>{1741e57a-11d3-4cd6-96da-ed8c01cfe25f}</Project>
-      <Name>BitcoinDatabaseGenerator</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\BitcoinDataLayerAdoNet\BitcoinDataLayerAdoNet.csproj">
       <Project>{c597e481-962b-4d66-ae8a-409e11519344}</Project>
       <Name>BitcoinDataLayerAdoNet</Name>
